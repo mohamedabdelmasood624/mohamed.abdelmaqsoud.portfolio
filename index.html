@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional Portfolio and CV of Mohamed Abdelmaqsoud, Associate Software Consultant specializing in manual testing, test case design, defect management, and software validation.">
+    <title>Mohamed Abdelmaqsoud | Associate Software Consultant</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle dark/light mode"><i class="fa-solid fa-moon"></i></button>
+
+    <!-- Mobile Header -->
+    <header class="mobile-header">
+        <div class="mobile-brand">
+            <span class="logo-text">M. Abdelmaqsoud</span>
+        </div>
+        <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </header>
+
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <div class="profile-container">
+                <img src="assets/profile.jpg" alt="Mohamed Abdelmaqsoud Headshot" class="profile-pic">
+            </div>
+            <h1 class="sidebar-name">Mohamed Abdelmaqsoud</h1>
+            <p class="sidebar-title">Associate Software Consultant</p>
+        </div>
+
+        <nav class="sidebar-nav">
+            <ul>
+                <li><a href="#about" class="nav-link active"><i class="fa-solid fa-user"></i> About</a></li>
+                <li><a href="#experience" class="nav-link"><i class="fa-solid fa-briefcase"></i> Experience</a></li>
+                <li><a href="#projects" class="nav-link"><i class="fa-solid fa-code"></i> Projects</a></li>
+                <li><a href="#skills" class="nav-link"><i class="fa-solid fa-gear"></i> Skills</a></li>
+                <li><a href="#contact" class="nav-link"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="sidebar-footer">
+            <a href="assets/profile.jpg" download="Mohamed_Abdelmaqsoud_CV.jpg" class="btn btn-primary btn-cv" id="downloadCVBtn">
+                <i class="fa-solid fa-file-arrow-down"></i> Download CV
+            </a>
+            <div class="social-links-sidebar">
+                <a href="https://linkedin.com/in/Mohamed-Abdelmaqsoud" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/mohamedabdelmasood624" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://instagram.com/mohamed_abdelmaqsoud" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="mailto:mohamed.abdelmaqsoud.cs@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+
+        <!-- Hero / About Section -->
+        <section id="about" class="section hero-section">
+            <div class="section-container">
+                <span class="section-tag">About Me</span>
+                <h2 class="hero-greeting">Associate Software Testing Consultant</h2>
+                <p class="hero-text">
+                    Results-driven Software Tester and Quality Assurance professional specializing in manual testing, test case design, defect management, and software validation. Proficient in C++, Java, and Python, with strong analytical and problem-solving skills applied to ensure software reliability, functionality, and performance.
+                </p>
+                <p class="hero-text">
+                    Experienced in the Software Development Life Cycle (SDLC) and Software Testing Life Cycle (STLC), designing comprehensive testing strategies, identifying critical defects, validating business requirements, and supporting the delivery of high-quality software solutions. Recognized for attention to detail, commitment to continuous improvement, and the ability to collaborate effectively with cross-functional teams to enhance product quality and user satisfaction.
+                </p>
+                
+                <!-- Company Sub-card -->
+                <div class="education-card">
+                    <div class="edu-icon" style="background-color: transparent; overflow: hidden; border-radius: 8px; border: 1px solid var(--color-border);"><img src="assets/logo-qestit.png" alt="QESTIT Group Logo" style="width: 100%; height: 100%; object-fit: cover; transform: scale(1.25);"></div>
+                    <div class="edu-details">
+                        <h3>QESTIT Group</h3>
+                        <p class="edu-sub">Associate Software Consultant (Part-time)</p>
+                        <p class="edu-meta">Apr 2026 - Present • Cairo, Egypt (On-site)</p>
+                    </div>
+                </div>
+
+                <!-- Education Sub-card -->
+                <div class="education-card">
+                    <div class="edu-icon" style="background-color: transparent; overflow: hidden; border-radius: 8px; border: 1px solid var(--color-border);"><img src="assets/logo-cairo.png" alt="Cairo University Logo" style="width: 100%; height: 100%; object-fit: cover; transform: scale(1.22);"></div>
+                    <div class="edu-details">
+                        <h3>Cairo University</h3>
+                        <p class="edu-sub">Faculty of Computers and Artificial Intelligence</p>
+                        <p class="edu-meta">Sophomore • GPA: <strong>3.18 / 4</strong> • 2024 - 2028 | Giza, Egypt</p>
+                    </div>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat-card">
+                        <span class="stat-number">GPA 3.18</span>
+                        <span class="stat-label">Cairo University</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">4+</span>
+                        <span class="stat-label">Experiences & Internships</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">5+</span>
+                        <span class="stat-label">Core Tech Languages</span>
+                    </div>
+                </div>
+                <div class="hero-actions">
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    <a href="#projects" class="btn btn-outline">Browse Projects</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Timeline Section -->
+        <section id="experience" class="section experience-section">
+            <div class="section-container">
+                <span class="section-tag">Professional Path</span>
+                <h2 class="section-title">Experience & Internships</h2>
+                
+                <div class="timeline">
+                    <!-- QESTIT Part-time Consultant -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">Apr 2026 – Present (4 mos)</div>
+                        <div class="timeline-content">
+                            <h3 class="role-title">Associate Software Consultant</h3>
+                            <h4 class="company-name">QESTIT Group • Part-time • Cairo, Egypt (On-site)</h4>
+                            <p class="role-description">
+                                Consult on software quality assurance and testing strategies, performing manual and automation audits, requirement validations, and defect lifecycle analysis.
+                            </p>
+                            <ul class="role-achievements">
+                                <li>Collaborate with cross-functional development teams to define software criteria, design test plans, and run validation processes.</li>
+                                <li>Review functional and non-functional requirement specifications to isolate bugs, verify code adjustments, and optimize application reliability.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- QESTIT -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">Jan 2026 – Feb 2026</div>
+                        <div class="timeline-content">
+                            <h3 class="role-title">QA & Automation Tester Engineer</h3>
+                            <h4 class="company-name">QESTIT Group • Internship</h4>
+                            <p class="role-description">
+                                Actively automated test suites to drive software quality assurance and increase application reliability. Integrated automated checks and analyzed performance limits to isolate bugs early in the release cycles.
+                            </p>
+                            <ul class="role-achievements">
+                                <li>Designed and deployed test automation scripts using Selenium and Playwright to enhance test coverage and execution efficiency.</li>
+                                <li>Performed JMeter performance testing diagnostics and conducted secure code reviews in sync with development teams.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- NTI -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">Sep 2025 – Nov 2025</div>
+                        <div class="timeline-content">
+                            <h3 class="role-title">Cyber Security Trainee</h3>
+                            <h4 class="company-name">National Telecommunication Institute (NTI)</h4>
+                            <p class="role-description">
+                                Completed intensive training specializing in penetration testing methodologies, defensive security architectures, and digital forensic investigation.
+                            </p>
+                            <ul class="role-achievements">
+                                <li>Configured and worked with IDS/IPS intrusion management systems, pfSense firewalls, and digital forensics utilities.</li>
+                                <li>Acquired hands-on experience simulated in sandboxed environments focusing on MITM (Man-in-the-Middle) and DNS spoofing vectors and defensive countermeasures.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- DEPI -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">Jun 2025 – Dec 2025</div>
+                        <div class="timeline-content">
+                            <h3 class="role-title">React Frontend Web Developer</h3>
+                            <h4 class="company-name">Digital Egypt Pioneers Initiative (DEPI)</h4>
+                            <p class="role-description">
+                                Participated in Egypt's national initiative for front-end engineers, focusing on modern architectures, responsive layouts, and digital transformation services.
+                            </p>
+                            <ul class="role-achievements">
+                                <li>Built responsive frontend web interfaces aligning with modern web development structures using ReactJS.</li>
+                                <li>Learned and integrated Git workflows, web performance standards, and component hierarchies.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Grid Section -->
+        <section id="projects" class="section projects-section">
+            <div class="section-container">
+                <span class="section-tag">Past Work</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="projects-grid">
+                    <!-- Project 1: InstaPal -->
+                    <article class="project-card">
+                        <div class="project-img-wrapper">
+                            <img src="assets/project-instapal.png" alt="InstaPal Dashboard Preview" class="project-img">
+                            <div class="project-overlay">
+                                <a href="https://github.com/mohamedabdelmasood624/InstaPal--SoftwareEngineering-" target="_blank" class="project-link" aria-label="View Project Code"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-details">
+                            <span class="project-category">Software Engineering</span>
+                            <h3 class="project-title">InstaPal</h3>
+                            <p class="project-description">
+                                A collaborative social platform simulator built in Java, modeling client-server message boards and user profile structures.
+                            </p>
+                            <div class="project-tags">
+                                <span>Java</span>
+                                <span>OOP</span>
+                                <span>Software Engineering</span>
+                                <span>Git</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2: Folio Online Library -->
+                    <article class="project-card">
+                        <div class="project-img-wrapper">
+                            <img src="assets/project-library.png" alt="Folio Online Library Mockup" class="project-img">
+                            <div class="project-overlay">
+                                <a href="https://github.com/mohamedabdelmasood624/Folio-Online-Library" target="_blank" class="project-link" aria-label="View Project Code"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-details">
+                            <span class="project-category">Web Development</span>
+                            <h3 class="project-title">Folio Online Library</h3>
+                            <p class="project-description">
+                                A responsive and styled digital catalog system managing online books, records searches, and profile inventories.
+                            </p>
+                            <div class="project-tags">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                                <span>Web Design</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3: Image Processor -->
+                    <article class="project-card">
+                        <div class="project-img-wrapper">
+                            <img src="assets/project-image-proc.png" alt="Image Processor Workspace" class="project-img">
+                            <div class="project-overlay">
+                                <a href="https://github.com/mohamedabdelmasood624/Image-Processor" target="_blank" class="project-link" aria-label="View Project Code"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-details">
+                            <span class="project-category">Desktop Utility</span>
+                            <h3 class="project-title">Image Processor</h3>
+                            <p class="project-description">
+                                A computational C++ command line tool performing matrix transformations, kernel operations, filters, and image rendering.
+                            </p>
+                            <div class="project-tags">
+                                <span>C++</span>
+                                <span>OOP</span>
+                                <span>Image Processing</span>
+                                <span>Algorithms</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 4: FCAI-CU GPA Calculator -->
+                    <article class="project-card">
+                        <div class="project-img-wrapper">
+                            <img src="assets/project-gpa.png" alt="GPA Calculator Analytics" class="project-img">
+                            <div class="project-overlay">
+                                <a href="https://github.com/mohamedabdelmasood624/FCAI-CU_GPA_Calculator" target="_blank" class="project-link" aria-label="View Project Code"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-details">
+                            <span class="project-category">Education Tech</span>
+                            <h3 class="project-title">FCAI-CU GPA Calculator</h3>
+                            <p class="project-description">
+                                A dedicated GPA auditing program aligned with Cairo University grading policies, providing analysis profiles of grade averages.
+                            </p>
+                            <div class="project-tags">
+                                <span>Java</span>
+                                <span>Data Auditing</span>
+                                <span>Cairo University</span>
+                                <span>Logic</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 5: Selenium Automation DemoBlaze -->
+                    <article class="project-card">
+                        <div class="project-img-wrapper">
+                            <img src="assets/project-testing.png" alt="Selenium Automated Report" class="project-img">
+                            <div class="project-overlay">
+                                <a href="https://github.com/mohamedabdelmasood624/Selenium_Automation_DemoBlaze_Products" target="_blank" class="project-link" aria-label="View Project Code"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-details">
+                            <span class="project-category">QA Automation</span>
+                            <h3 class="project-title">DemoBlaze QA Testing</h3>
+                            <p class="project-description">
+                                Robust automated UI test suites verifying authentication, catalog item purchases, and shopping checkout flows.
+                            </p>
+                            <div class="project-tags">
+                                <span>Java</span>
+                                <span>Selenium</span>
+                                <span>QA Testing</span>
+                                <span>E-Commerce</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 6: Playwright POM Automation -->
+                    <article class="project-card">
+                        <div class="project-img-wrapper">
+                            <img src="assets/project-playwright.png" alt="Playwright Test Outputs" class="project-img">
+                            <div class="project-overlay">
+                                <a href="https://github.com/mohamedabdelmasood624/playwright-automation-pom" target="_blank" class="project-link" aria-label="View Project Code"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-details">
+                            <span class="project-category">QA Automation</span>
+                            <h3 class="project-title">Playwright POM Automation</h3>
+                            <p class="project-description">
+                                Quality assurance script framework using JavaScript and the Page Object Model (POM) to validate user flows.
+                            </p>
+                            <div class="project-tags">
+                                <span>JavaScript</span>
+                                <span>Playwright</span>
+                                <span>POM</span>
+                                <span>Defect Management</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 7: Tic-Tac-Toe Board Games -->
+                    <article class="project-card">
+                        <div class="project-img-wrapper">
+                            <img src="assets/project-games.png" alt="Tic Tac Toe Gameplay grid" class="project-img">
+                            <div class="project-overlay">
+                                <a href="https://github.com/mohamedabdelmasood624/Tic-Tac-Toe-Board-Games-" target="_blank" class="project-link" aria-label="View Project Code"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-details">
+                            <span class="project-category">Game Engine</span>
+                            <h3 class="project-title">Tic-Tac-Toe Board Games</h3>
+                            <p class="project-description">
+                                An interactive board game application built in C++ structuring match matrices and decision configurations.
+                            </p>
+                            <div class="project-tags">
+                                <span>C++</span>
+                                <span>Game Logic</span>
+                                <span>Algorithms</span>
+                                <span>OOP</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 8: JUCE Music Player -->
+                    <article class="project-card">
+                        <div class="project-img-wrapper">
+                            <img src="assets/project-music.png" alt="JUCE Music Player Interface" class="project-img">
+                            <div class="project-overlay">
+                                <a href="https://github.com/mohamedabdelmasood624/JUCE-Music-Player" target="_blank" class="project-link" aria-label="View Project Code"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-details">
+                            <span class="project-category">Audio Engineering</span>
+                            <h3 class="project-title">JUCE Music Player</h3>
+                            <p class="project-description">
+                                A lightweight desktop audio player program using C++ and the JUCE library to handle wave audio and playlist storage.
+                            </p>
+                            <div class="project-tags">
+                                <span>C++</span>
+                                <span>JUCE</span>
+                                <span>Audio DSP</span>
+                                <span>GUI</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section skills-section">
+            <div class="section-container">
+                <span class="section-tag">Competencies</span>
+                <h2 class="section-title">Skills & Abilities</h2>
+                
+                <div class="skills-grid">
+                    <!-- Languages -->
+                    <div class="skills-category-card">
+                        <h3 class="skills-cat-title"><i class="fa-solid fa-code"></i> Programming</h3>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Python / Scripting</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">C++ / OOP</span>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">JavaScript / HTML / CSS</span>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Java</span>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" style="width: 75%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tools & Tech -->
+                    <div class="skills-category-card">
+                        <h3 class="skills-cat-title"><i class="fa-solid fa-toolbox"></i> Tools & Tech</h3>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Software & UI Testing (Selenium, Playwright)</span>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Git & Docker</span>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Figma / UI Mockups</span>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" style="width: 75%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">SQL Server / Databases</span>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Technical Skills & Soft Skills -->
+                    <div class="skills-category-card">
+                        <h3 class="skills-cat-title"><i class="fa-solid fa-award"></i> Technical & Spoken</h3>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">QA Methodology / Bug Reporting</span>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Network Security & MITM Labs</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                        
+                        <!-- Spoken Languages Progress Grid -->
+                        <div class="languages-subgrid">
+                            <h4>Spoken Languages</h4>
+                            <div class="lang-pills">
+                                <span class="lang-pill">Arabic <strong>(Native)</strong></span>
+                                <span class="lang-pill">English <strong>(Intermediate B1)</strong></span>
+                                <span class="lang-pill">French <strong>(Pre-Intermediate A2)</strong></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
+            <div class="section-container">
+                <span class="section-tag">Let's Talk</span>
+                <h2 class="section-title">Contact & Communication</h2>
+                
+                <div class="contact-wrapper">
+                    <!-- Contact Form -->
+                    <div class="contact-form-container">
+                        <form id="contactForm" class="contact-form">
+                            <div class="form-group-row">
+                                <div class="form-group">
+                                    <label for="name">Your Name <span class="required">*</span></label>
+                                    <input type="text" id="name" name="name" placeholder="John Doe" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Your Email <span class="required">*</span></label>
+                                    <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject <span class="required">*</span></label>
+                                <input type="text" id="subject" name="subject" placeholder="Collaboration Inquiry" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message <span class="required">*</span></label>
+                                <textarea id="message" name="message" rows="6" placeholder="Tell me about your project or role details..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-submit" id="submitBtn">
+                                <span>Send Message</span> <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+                            <div class="form-message" id="formMessage"></div>
+                        </form>
+                    </div>
+
+                    <!-- Contact details -->
+                    <div class="contact-info-container">
+                        <div class="info-item">
+                            <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+                            <div class="info-text">
+                                <span class="info-label">Email Directly</span>
+                                <a href="mailto:mohamed.abdelmaqsoud.cs@gmail.com" class="info-value">mohamed.abdelmaqsoud.cs@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+                            <div class="info-text">
+                                <span class="info-label">Call/WhatsApp</span>
+                                <a href="https://wa.me/201055105742" target="_blank" class="info-value">+20 105 510 5742</a>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <div class="info-text">
+                                <span class="info-label">Location</span>
+                                <span class="info-value">Giza, Egypt (Open to Remote / Relocation)</span>
+                            </div>
+                        </div>
+
+                        <div class="social-links-contact">
+                            <h3>Find Me Online</h3>
+                            <div class="social-icons">
+                                <a href="https://linkedin.com/in/Mohamed-Abdelmaqsoud" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a>
+                                <a href="https://github.com/mohamedabdelmasood624" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i> GitHub</a>
+                                <a href="https://instagram.com/mohamed_abdelmaqsoud" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i> Instagram</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2026 Mohamed Abdelmaqsoud. Created with HTML5, CSS3, Express, and JavaScript. All rights reserved.</p>
+        </footer>
+
+    </main>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
