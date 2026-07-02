@@ -21,12 +21,11 @@
 
     <!-- Mobile Header -->
     <header class="mobile-header">
-        <div class="mobile-brand">
+        <div class="mobile-brand" style="display: flex; align-items: center; gap: 10px;">
+            <img src="assets/profile.jpg" alt="Mohamed Abdelmaqsoud Avatar" style="width: 32px; height: 32px; border-radius: 50%; object-fit: cover; border: 2px solid rgba(255, 255, 255, 0.2);">
             <span class="logo-text">M. Abdelmaqsoud</span>
         </div>
-        <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle navigation">
-            <i class="fa-solid fa-bars"></i>
-        </button>
+        <button id="mobileNavToggle" class="mobile-nav-toggle" aria-label="Toggle navigation menu"><i class="fa-solid fa-bars"></i></button>
     </header>
 
     <!-- Sidebar Navigation -->
@@ -65,9 +64,17 @@
     <!-- Main Content Area -->
     <main class="main-content">
 
-        <!-- Hero / About Section -->
         <section id="about" class="section hero-section">
             <div class="section-container">
+                <!-- Mobile Profile Avatar Showcase (Hidden on Desktop) -->
+                <div class="mobile-hero-profile">
+                    <div class="profile-container">
+                        <img src="assets/profile.jpg" alt="Mohamed Abdelmaqsoud Portrait" class="profile-pic">
+                    </div>
+                    <h1 class="mobile-hero-name">Mohamed Abdelmaqsoud</h1>
+                    <p class="mobile-hero-sub">Associate Software Consultant</p>
+                </div>
+
                 <span class="section-tag">About Me</span>
                 <h2 class="hero-greeting">Associate Software Testing Consultant</h2>
                 <p class="hero-text">
@@ -128,7 +135,7 @@
                     <!-- QESTIT Part-time Consultant -->
                     <div class="timeline-item">
                         <div class="timeline-dot"></div>
-                        <div class="timeline-date">Apr 2026 – Present (4 mos)</div>
+                        <div class="timeline-date">Apr 2026 – Present</div>
                         <div class="timeline-content">
                             <h3 class="role-title">Associate Software Consultant</h3>
                             <h4 class="company-name">QESTIT Group • Part-time • Cairo, Egypt (On-site)</h4>
