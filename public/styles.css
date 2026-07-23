@@ -235,7 +235,7 @@ img {
     left: 0;
     width: 100%;
     height: var(--header-height-mobile);
-    background-color: var(--color-primary-navy);
+    background-color: var(--color-sidebar-bg);
     color: var(--color-white);
     z-index: 1000;
     align-items: center;
@@ -772,46 +772,49 @@ img {
 .skills-cat-title i {
     color: var(--color-brand-blue);
 }
-
-.skill-item {
-    margin-bottom: 20px;
-}
-
-.skill-item:last-child {
-    margin-bottom: 0;
-}
-
-.skill-info {
+.skills-list {
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 8px;
+    flex-wrap: wrap;
+    gap: 12px;
 }
 
-.skill-name {
-    font-size: 0.95rem;
-    font-weight: 600;
-    color: var(--color-text-secondary);
-}
-
-.skill-percentage {
-    font-size: 0.9rem;
-    font-weight: 600;
-    color: var(--color-brand-blue);
-}
-
-.skill-bar-bg {
-    width: 100%;
-    height: 8px;
+.skill-tag {
     background-color: var(--color-bg-secondary);
-    border-radius: 4px;
-    overflow: hidden;
+    border: 1px solid var(--color-border);
+    color: var(--color-text-secondary);
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: var(--transition-smooth);
+    cursor: default;
 }
 
-.skill-bar-fill {
-    height: 100%;
-    background-color: var(--color-brand-blue);
-    border-radius: 4px;
-    transition: width 1.5s cubic-bezier(0.1, 0.8, 0.2, 1);
+.skill-tag i {
+    color: var(--color-brand-blue);
+    font-size: 1.05rem;
+    transition: var(--transition-smooth);
+}
+
+.skill-tag:hover {
+    transform: translateY(-2px);
+    border-color: var(--color-brand-blue);
+    background-color: rgba(37, 99, 235, 0.04);
+    color: var(--color-text-primary);
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.08);
+}
+
+[data-theme="dark"] .skill-tag i {
+    color: var(--color-brand-light);
+}
+
+[data-theme="dark"] .skill-tag:hover {
+    border-color: var(--color-brand-light);
+    background-color: rgba(59, 130, 246, 0.06);
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.12);
 }
 
 /* Languages pills design */
@@ -1078,10 +1081,27 @@ a.info-value:hover {
         max-width: 320px;
         padding-top: 20px;
         box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
     }
     
     .sidebar.active {
         transform: translateX(0);
+    }
+
+    .sidebar-header,
+    .sidebar-nav,
+    .sidebar-footer {
+        flex-shrink: 0;
+    }
+
+    .sidebar-footer {
+        padding-bottom: 30px;
+    }
+
+    .project-overlay {
+        opacity: 1 !important;
+        background-color: rgba(15, 23, 42, 0.4) !important;
     }
     
     .main-content {
@@ -1090,7 +1110,8 @@ a.info-value:hover {
     }
     
     .section {
-        padding: 60px 0;
+        padding: 50px 0;
+        min-height: auto;
     }
     
     .hero-greeting {
@@ -1143,6 +1164,11 @@ a.info-value:hover {
     .education-card {
         flex-direction: column;
         text-align: center;
+    }
+    .projects-grid,
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
     }
 }
 

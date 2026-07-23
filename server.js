@@ -127,7 +127,6 @@ app.get('/api/cv/details', (req, res) => {
         education: {
             institution: "Cairo University",
             faculty: "Computers and Artificial Intelligence",
-            gpa: "3.18 / 4",
             years: "2024 - 2028"
         },
         languages: ["Arabic (Native)", "English (Intermediate - B1)", "French (Pre-Intermediate - A2)"]
